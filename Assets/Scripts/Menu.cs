@@ -49,8 +49,21 @@ public class Menu : MonoBehaviour
             }
         }
     }
+
+    // CLIENT only - Callback when we connect to a server
+    void OnConnectedToServer ()
+    {
+        GoToGameScene ();
+    }
+
+    // SERVER only - Callback when we create the server
+    void OnServerInitialized ()
+    {
+        GoToGameScene ();
+    }
+
     void GoToGameScene ()
     {
-
+        Application.LoadLevel ("MainGameScene");
     }
 }
