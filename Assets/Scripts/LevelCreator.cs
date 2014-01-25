@@ -14,7 +14,7 @@ public class LevelCreator : MonoBehaviour
     // Use this for initialization
     void Start()
 	{
-        Generate();
+		Generate();
     }
 
     void Generate()
@@ -24,21 +24,26 @@ public class LevelCreator : MonoBehaviour
             Vector3 pos = transform.localPosition;
             float halfWidth = transform.localScale.x / 2f;
             float halfHeight = transform.localScale.y / 2f;
-            float step = 0.1f;
-            for(float x = pos.x - halfWidth; x < pos.x + halfWidth - step; x += step)
+			float halfDepth = transform.localScale.z / 2f;
+			float z = pos.z - halfDepth;
+            float step = 1.0f;
+			int numRows = (int)(transform.localScale.y / step);
+			float depthStep = transform.localScale.z / numRows;
+            for(float y = pos.y - halfWidth; y < pos.y + halfHeight - step; y += step)
             {
-                for(float y = pos.y - halfHeight; y < pos.y + halfHeight - step; y += step)
+                for(float x = pos.x - halfWidth; x < pos.x + halfWidth - step; x += step)
                 {
                     if(Random.value < SpatterDensity)
                     {
-                        Transform p = (Transform)Instantiate(Spatter[Random.Range(0, Spatter.Length)], new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), 0f), transform.localRotation);
+                        Transform p = (Transform)Instantiate(Spatter[Random.Range(0, Spatter.Length)], new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), z), transform.localRotation);
                         p.parent = transform;
 						p.localScale = new Vector3(
 							1 / transform.localScale.x,
 							1 / transform.localScale.y,
-							transform.localScale.z);
+							1 / transform.localScale.z);
                     }
                 }
+				z += depthStep;
             }
         }
     }
