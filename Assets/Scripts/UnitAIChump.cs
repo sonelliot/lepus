@@ -5,7 +5,7 @@ public class UnitAIChump : Unit
 {
 		public float noticeDistance = 20.0f;
 		public float runDistance = 10.0f;
-		public UnitPlayer player;
+		public UnitChaser player;
 		protected bool _hasNoticed = false;
 	
 		// Use this for initialization
