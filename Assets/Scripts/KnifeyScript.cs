@@ -4,13 +4,16 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class KnifeyScript : MonoBehaviour
 {
-	public Unit player; 
-	// Use this for initialization
 	void Start ()
 	{
-		rigidbody2D.AddForce(new Vector2(50.0f, 50.0f));
-		transform.Rotate(new Vector3(180,0,0));
-		//rigidbody2D.AddForce(player.AimDirection*5);
+		var mouse_pos = Input.mousePosition;
+		var object_pos = Camera.main.WorldToScreenPoint(transform.position);
+		mouse_pos.x = mouse_pos.x - object_pos.x;
+		mouse_pos.y = mouse_pos.y - object_pos.y;
+
+		//rigidbody2D.transform.rotation = transform.rotation;
+		rigidbody2D.AddForce(new Vector2(mouse_pos.x * 500f,
+		                                 mouse_pos.y * 500f));
 	}
 
 	void OnCollisionEnter2D(Collision2D coll)
