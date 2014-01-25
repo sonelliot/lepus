@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using UnityEngine;
 
 public class GameProperties
 {
@@ -22,5 +23,7 @@ public class GameProperties
 
     public bool Chaser = false;
     public bool Chasee = false;
+
+    public GameObject Player;
 }
 

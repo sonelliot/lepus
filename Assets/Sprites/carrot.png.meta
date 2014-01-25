@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 6c1e13f31e636784cbb452436085be8d
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: carrot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 213
+        width: 26
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 213
+        width: 22
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 209
+        width: 24
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 213
+        width: 19
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_4
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 216
+        width: 20
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 216
+        width: 23
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 94
+        width: 19
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_7
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 103
+        width: 27
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 15
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1
+        width: 14
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 13
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_11
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 8
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_12
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4
+        width: 19
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 5
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: carrot_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1
+        width: 13
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
