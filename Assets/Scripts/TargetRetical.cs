@@ -18,18 +18,17 @@ public class TargetRetical : MonoBehaviour
             var aimDir = GameProperties.Inst.Player.GetComponent<UnitChaser> ().AimDirection ();
 
             GUI.TextArea (new Rect (50, 50, 100, 100), string.Format ("Aim X: {0}\n Aim Y: {1}", aimDir.x, aimDir.y));
-            //GUI.TextArea(new Rect(100,200,500,100), string.Format("Mouse X: {0}, Mouse Y: {1}", Input.mousePosition.x, Input.mousePosition.y));
+            GUI.TextArea(new Rect(100,200,500,100), string.Format("Mouse X: {0}, Mouse Y: {1}", Input.mousePosition.x, Input.mousePosition.y));
         }
     }
 
     // Update is called once per frame
     void Update ()
     {
-        RaycastHit rayHit;
-        Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out rayHit);
+		var pos = Camera.main.ScreenToWorldPoint (new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
 		
-        var mouseXPos = rayHit.point.x;
-        var mouseYPos = rayHit.point.y;
+		var mouseXPos = pos.x;
+		var mouseYPos = pos.y;
 
         Vector3 reticalPosition = new Vector3 (){
 			x = mouseXPos,
