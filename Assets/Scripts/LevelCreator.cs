@@ -6,6 +6,7 @@ public class LevelCreator : MonoBehaviour
 {
 #if UNITY_EDITOR
     public bool Regenerate = false;
+	public bool ClearSpatter = false;
 #endif
     public float SpatterDensity = 0.1f;
     public Transform[] Spatter;
@@ -54,6 +55,12 @@ public class LevelCreator : MonoBehaviour
 
     void Update()
     {
+		if (ClearSpatter)
+		{
+			Clear();
+			ClearSpatter = false;
+		}
+
         if(Regenerate)
         {
             Clear();
