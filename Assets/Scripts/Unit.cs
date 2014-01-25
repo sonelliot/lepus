@@ -15,6 +15,15 @@ public class Unit : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
     }
 
+    [RPC]
+    void SetVelocity(float velocity)
+    {
+        if(anim)
+        {
+            anim.SetFloat("Velocity", velocity);
+        }
+    }
+
     // Update is called once per frame
     public virtual void Update()
     {
@@ -25,6 +34,7 @@ public class Unit : MonoBehaviour
             if(anim)
             {
                 anim.SetFloat("Velocity", dPos.magnitude);
+                networkView.RPC("SetVelocity", RPCMode.AllBuffered, dPos.magnitude);
             }
         }
     }
