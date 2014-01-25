@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 11b9d390821e5a24fbe8c9e923ed8387
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Leaves_0
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 368
+        width: 62
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_1
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 392
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 278
+        width: 97
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 301
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_4
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 312
+        width: 94
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_5
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 188
+        width: 76
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 256
+        width: 75
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_7
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 152
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_8
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 184
+        width: 185
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 75
+        width: 117
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_10
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 124
+        width: 80
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_11
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 44
+        width: 69
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Leaves_12
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 56
+        width: 104
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

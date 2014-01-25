@@ -1,0 +1,85 @@
+fileFormatVersion: 2
+guid: 0fbf7d8e6183ade41be363f67da91388
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: GrassPuffs_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 368
+        width: 88
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: GrassPuffs_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 92
+        width: 56
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: GrassPuffs_2
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 172
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: GrassPuffs_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 110
+        width: 71
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
