@@ -18,8 +18,6 @@ public class MainSceneSetup : MonoBehaviour
         {
             GameProperties.Inst.Chaser = true;
             GameProperties.Inst.Player = (GameObject)Network.Instantiate(PlayerPrefab, Vector3.up * 2, Quaternion.identity, 0);
-
-            Network.Instantiate(AI_Prefab, Vector3.up * 2, Quaternion.identity, 0);
         }
         else
         {

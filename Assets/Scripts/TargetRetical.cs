@@ -15,10 +15,10 @@ public class TargetRetical : MonoBehaviour
     {
         if (GameProperties.Inst.Player != null)
         {
-            var aimDir = GameProperties.Inst.Player.GetComponent<UnitChaser> ().AimDirection ();
+            //var aimDir = GameProperties.Inst.Player.GetComponent<UnitChaser> ().AimDirection ();
 
-            GUI.TextArea (new Rect (50, 50, 100, 100), string.Format ("Aim X: {0}\n Aim Y: {1}", aimDir.x, aimDir.y));
-            GUI.TextArea(new Rect(100,200,500,100), string.Format("Mouse X: {0}, Mouse Y: {1}", Input.mousePosition.x, Input.mousePosition.y));
+            //GUI.TextArea (new Rect (50, 50, 100, 100), string.Format ("Aim X: {0}\n Aim Y: {1}", aimDir.x, aimDir.y));
+            //GUI.TextArea(new Rect(100,200,500,100), string.Format("Mouse X: {0}, Mouse Y: {1}", Input.mousePosition.x, Input.mousePosition.y));
         }
     }
 
