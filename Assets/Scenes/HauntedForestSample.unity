@@ -123,6 +123,49 @@ MonoBehaviour:
   - {fileID: 400000, guid: 2fc5f5d75f8d40f42ab0e15c58d3b1e2, type: 2}
   - {fileID: 400000, guid: 6412fedd6b137364e9ea86b1dd690448, type: 2}
   - {fileID: 400000, guid: af34228fe7d612340a8b62c5fdfac60e, type: 2}
+--- !u!1 &1255261650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1255261651}
+  - 114: {fileID: 1255261652}
+  m_Layer: 0
+  m_Name: TreeSpatter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1255261651
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255261650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 200, y: 100, z: 10}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1255261652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1255261650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 061d46c8f55121c44bec44a203a7623a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Regenerate: 0
+  ClearSpatter: 0
+  SpatterDensity: .00999999978
+  Spatter:
+  - {fileID: 400000, guid: 309fbe0f7bd2d674b846d789a7af6cc9, type: 2}
 --- !u!1 &1732742442
 GameObject:
   m_ObjectHideFlags: 0
