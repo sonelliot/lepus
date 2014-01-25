@@ -14,11 +14,11 @@ public class Unit : MonoBehaviour
     }
 
     // Update is called once per frame
-    public virtual void FixedUpdate ()
+    public virtual void Update ()
     {
         if (GetComponent<NetworkView> ().isMine)
         {
-            _transform.position += new Vector3 (move.x * movementSpeed, move.y * movementSpeed, 0);
+            _transform.position += new Vector3 (move.x * movementSpeed * Time.deltaTime, move.y * movementSpeed * Time.deltaTime, 0);
         }
     }
 

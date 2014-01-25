@@ -18,7 +18,7 @@ public class UnitPlayer : Unit
     }
 
     // Update is called once per frame
-    public override void FixedUpdate ()
+    public override void Update ()
     {
         if (GetComponent<NetworkView> ().isMine)
         {
@@ -37,7 +37,7 @@ public class UnitPlayer : Unit
                 Network.Instantiate (projectilePrefab, transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 180)), 0);
             }
 
-            base.FixedUpdate ();
+            base.Update ();
         }
     }
 }
