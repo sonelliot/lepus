@@ -12,7 +12,7 @@ public class LevelCreator : MonoBehaviour
 
     // Use this for initialization
     void Start()
-    {
+	{
         Generate();
     }
 
@@ -32,6 +32,10 @@ public class LevelCreator : MonoBehaviour
                     {
                         Transform p = (Transform)Instantiate(Spatter[Random.Range(0, Spatter.Length)], new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), 0f), transform.localRotation);
                         p.parent = transform;
+						p.localScale = new Vector3(
+							1 / transform.localScale.x,
+							1 / transform.localScale.y,
+							transform.localScale.z);
                     }
                 }
             }
