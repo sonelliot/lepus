@@ -1,23 +1,16 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class MainSceneSetup : MonoBehaviour
 {
-		public GameObject PlayerChaser;
-		public GameObject PlayerChasee;
-		public GameObject AI_Prefab;
+	public GameObject PlayerPrefab;
+        public GameObject PlayerChasee;
+	public GameObject AI_Prefab;
 
-		// Use this for initialization
-		void Start ()
-		{
-	
-		}
-	
-		// Update is called once per frame
-		void Update ()
-		{
-	
-		}
+	// Use this for initialization
+	void Start ()
+	{
+	}
 
 		void OnLevelWasLoaded (int lvl)
 		{
@@ -33,4 +26,7 @@ public class MainSceneSetup : MonoBehaviour
 				
 				
 		}
+
+		GameProperties.Inst.Player = (GameObject)Network.Instantiate (PlayerPrefab, Vector3.up * 2, Quaternion.identity, 0);
+	}
 }
