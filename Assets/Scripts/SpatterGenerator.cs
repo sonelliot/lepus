@@ -14,7 +14,7 @@ public class SpatterGenerator : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-    	Generate();
+        Generate();
     }
 
     void Generate()
@@ -35,7 +35,8 @@ public class SpatterGenerator : MonoBehaviour
                 {
                     if(Random.value < SpatterDensity)
                     {
-						Transform p = (Transform)Network.Instantiate(
+                        //Transform p = (Transform)
+                        Network.Instantiate(
 							Spatter[Random.Range(0, Spatter.Length)],
 							new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), z),
 							transform.localRotation,
@@ -54,21 +55,22 @@ public class SpatterGenerator : MonoBehaviour
     }
  
 #if UNITY_EDITOR
-    void Clear ()
+    void Clear()
     {
-		for (int i=transform.childCount-1; i>=0; --i) {
-			var child = transform.GetChild (i).gameObject;
-			DestroyImmediate (child);
-		}
-	}
+        for(int i=transform.childCount-1; i>=0; --i)
+        {
+            var child = transform.GetChild(i).gameObject;
+            DestroyImmediate(child);
+        }
+    }
 
     void Update()
     {
-		if (ClearSpatter)
-		{
-			Clear();
-			ClearSpatter = false;
-		}
+        if(ClearSpatter)
+        {
+            Clear();
+            ClearSpatter = false;
+        }
 
         if(Regenerate)
         {
