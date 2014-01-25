@@ -355,7 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb342f5b2eb639d4ca6b863408193d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 100000, guid: 74a3810d67ef62f46b72c221bd52e464, type: 2}
+  PlayerChaser: {fileID: 100000, guid: 74a3810d67ef62f46b72c221bd52e464, type: 2}
+  PlayerChasee: {fileID: 100008, guid: cbe0aeff2b5ad074a960b847f87e4022, type: 2}
   AI_Prefab: {fileID: 100008, guid: 14e8f715e80eb3e468337bf383605d55, type: 2}
 --- !u!4 &887120847
 Transform:

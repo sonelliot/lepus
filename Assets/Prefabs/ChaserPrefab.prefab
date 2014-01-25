@@ -8,12 +8,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 114: {fileID: 11400000}
   - 148: {fileID: 14800000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: PlayerPrefab
+  m_Name: ChaserPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,12 +153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 17
-  Weapons:
-  - {fileID: 400014, guid: d7988f4ab022f2c45afe590ba0ace1a0, type: 2}
-  - {fileID: 400010, guid: 15183332bf8a8444da85d1307fb09743, type: 2}
-  - {fileID: 400014, guid: e52cd3fe341032b4b8bf152e4b44ba17, type: 2}
-  - {fileID: 400010, guid: 9924b0bb9295c14479f8e36b7a43658d, type: 2}
-  - {fileID: 400014, guid: bf390ab54219e6b48827625cf77bcfdc, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
