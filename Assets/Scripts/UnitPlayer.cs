@@ -25,15 +25,14 @@ public class UnitPlayer : Unit
 						move = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
 						move.Normalize ();
 
-						if (Input.GetMouseButtonDown (0)) 
-						{
+						if (Input.GetMouseButtonDown (0)) {
 								var mouse_pos = Input.mousePosition;
 								var object_pos = Camera.main.WorldToScreenPoint (transform.position);
 								mouse_pos.x = mouse_pos.x - object_pos.x;
 								mouse_pos.y = mouse_pos.y - object_pos.y;
 								var angle = Mathf.Atan2 (mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
 
-								Network.Instantiate (Weapons[Random.Range(0, Weapons.Length)], transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 90)), 0);
+								Network.Instantiate (Weapons [Random.Range (0, Weapons.Length)], transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 90)), 0);
 						}
 
 						base.Update ();
