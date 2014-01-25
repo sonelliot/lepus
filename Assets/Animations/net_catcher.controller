@@ -236,5 +236,5 @@ StateMachine:
       - {fileID: 110184226}
       - {fileID: 110197424}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: 336, y: -120, z: 0}
+  m_AnyStatePosition: {x: 48, y: -96, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
