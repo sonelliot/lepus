@@ -41,11 +41,11 @@ public class SpatterGenerator : MonoBehaviour
 							transform.localRotation,
 							0);
 
-                        p.parent = transform;
-                        p.localScale = new Vector3(
+                        //p.parent = transform;
+                        /*p.localScale = new Vector3(
 							1 / transform.localScale.x,
                             1 / transform.localScale.y,
-                            1 / transform.localScale.z);
+                            1 / transform.localScale.z);*/
                     }
                 }
                 z += depthStep;
