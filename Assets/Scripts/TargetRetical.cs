@@ -14,11 +14,10 @@ public class TargetRetical : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				RaycastHit rayHit;
-				Physics.Raycast (Camera.main.ScreenPointToRay (Input.mousePosition), out rayHit);
+				var pos = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
 		
-				var mouseXPos = rayHit.point.x;
-				var mouseYPos = rayHit.point.y;
+				var mouseXPos = pos.x;
+				var mouseYPos = pos.y;
 
 				Vector3 reticalPosition = new Vector3 (){
 			x = mouseXPos,
