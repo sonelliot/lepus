@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UnitPlayer : Unit
 {
-	public GameObject projectilePrefab;
+    public GameObject projectilePrefab;
 
     // Use this for initialization
     public override void Start ()
@@ -12,18 +12,10 @@ public class UnitPlayer : Unit
     }
 
 <<<<<<< HEAD
-    // Update is called once per frame
-    public override void Update ()
+    void OnGUI ()
     {
-        // Only update if this object belongs to our instance. Every client updates their own object.
-        if (GetComponent<NetworkView> ().isMine)
-        {
-            //Movement shiat
-            move = new Vector3 (Input.GetAxis ("Horizontal"), 0f, Input.GetAxis ("Vertical"));
-            move.Normalize ();
-            
-            base.Update ();
-        }
+        //move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        //GUI.TextArea(new Rect(100,100,100,100), string.Format("Move X: {0}\n Move Y: {1}", move.x, move.y));
     }
 =======
 	void OnGUI()
@@ -39,13 +31,34 @@ public class UnitPlayer : Unit
 		move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 		move.Normalize();
 
-		if(Input.GetKeyDown("space"))
+		if(Input.GetMouseButtonDown(0))
 	   	{
-			Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+			var mouse_pos = Input.mousePosition;
+			var object_pos = Camera.main.WorldToScreenPoint(transform.position);
+			mouse_pos.x = mouse_pos.x - object_pos.x;
+			mouse_pos.y = mouse_pos.y - object_pos.y;
+			var angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
+
+			var returnObject = Instantiate(projectilePrefab, transform.position, Quaternion.Euler(new Vector3(0, 0, angle + 180)));
 		}
+>>>>>>> 776a413c03feba8f14ea6fc1c499b5731a74b01f
 
-		base.FixedUpdate();
-	}
+    // Update is called once per frame
+    public override void FixedUpdate ()
+    {
+        if (GetComponent<NetworkView> ().isMine)
+        {
+            //Movement shiat
+            move = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
+            move.Normalize ();
+            
+            if (Input.GetKeyDown ("space"))
+            {
+                Network.Instantiate (projectilePrefab, transform.position, Quaternion.identity, 0);
+            }
+            
+            base.FixedUpdate ();
+        }
+    }
 
->>>>>>> 9d79cb7ec5a6c9277ea4478d360ba4dfc750a3cb
 }

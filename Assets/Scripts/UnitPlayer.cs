@@ -25,14 +25,19 @@ public class UnitPlayer : Unit
             //Movement shiat
             move = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
             move.Normalize ();
-            
-            if (Input.GetKeyDown ("space"))
+
+            if (Input.GetMouseButtonDown (0))
             {
-                Network.Instantiate (projectilePrefab, transform.position, Quaternion.identity, 0);
+                var mouse_pos = Input.mousePosition;
+                var object_pos = Camera.main.WorldToScreenPoint (transform.position);
+                mouse_pos.x = mouse_pos.x - object_pos.x;
+                mouse_pos.y = mouse_pos.y - object_pos.y;
+                var angle = Mathf.Atan2 (mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
+
+                Network.Instantiate (projectilePrefab, transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 180)), 0);
             }
-            
+
             base.FixedUpdate ();
         }
     }
-
 }
