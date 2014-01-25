@@ -35,7 +35,11 @@ public class SpatterGenerator : MonoBehaviour
                 {
                     if(Random.value < SpatterDensity)
                     {
-                        Transform p = (Transform)Network.Instantiate(Spatter[Random.Range(0, Spatter.Length)], new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), z), transform.localRotation);
+                        Transform p = (Transform)Network.Instantiate(
+							Spatter[Random.Range(0, Spatter.Length)],
+							new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), z),
+							transform.localRotation,
+							0);
                         p.parent = transform;
                         p.localScale = new Vector3(
 							1 / transform.localScale.x,
