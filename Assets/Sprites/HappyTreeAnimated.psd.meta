@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 01b643ab483cd634092bed6c8e7a98c9
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: HappyTreeAnimated_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 305
+        width: 327
+        height: 335
+      alignment: 9
+      pivot: {x: .497011334, y: .0507353358}
+    - name: HappyTreeAnimated_1
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 481
+        width: 109
+        height: 123
+      alignment: 9
+      pivot: {x: .069630757, y: .396708667}
+    - name: HappyTreeAnimated_3
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 318
+        width: 162
+        height: 127
+      alignment: 9
+      pivot: {x: .92832154, y: .669295669}
+    - name: HappyTreeAnimated_4
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 11
+        width: 307
+        height: 281
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: HappyTreeAnimated_8
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 393
+        width: 86
+        height: 85
+      alignment: 9
+      pivot: {x: .897737026, y: .350531012}
+    - name: HappyTreeAnimated_9
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 153
+        width: 181
+        height: 476
+      alignment: 9
+      pivot: {x: .624186993, y: .0277768616}
+    - name: HappyTreeAnimated_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 165
+        width: 139
+        height: 106
+      alignment: 9
+      pivot: {x: .492969096, y: .214186758}
+    - name: HappyTreeAnimated_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 65
+        width: 53
+        height: 81
+      alignment: 2
+      pivot: {x: .5, y: 1}
+  spritePackingTag: 
+  userData: 
