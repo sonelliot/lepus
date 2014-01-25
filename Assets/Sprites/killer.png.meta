@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: e29815587fb93f24f9b8711b08805056
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: killer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 157
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 75
+        width: 24
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 120
+        width: 57
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_3
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 116
+        width: 137
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_4
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 77
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: killer_5
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 60
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_7
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 51
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_8
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 72
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_9
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 21
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_10
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 35
+        width: 34
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_11
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 28
+        width: 67
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_12
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 16
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_13
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 16
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_14
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 0
+        width: 57
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: killer_15
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 0
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
