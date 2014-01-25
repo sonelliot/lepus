@@ -1,27 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(CharacterController))]
 public class Unit : MonoBehaviour
 {
 	public float movementSpeed = 3.0f;
-	protected CharacterController control;
-	protected Vector3 move = Vector3.zero;
+	protected Vector2 move = Vector2.zero;
+	protected Transform _transform;
 
 	// Use this for initialization
 	public virtual void Start ()
 	{
-		control = GetComponent<CharacterController>();
-		if(!control)
-		{
-			Debug.LogError ("Unit.Start() " + name + " has no character controller");
-			enabled = false;
-		}
+		_transform = GetComponent<Transform>();
 	}
 
 	// Update is called once per frame
-	public virtual void Update ()
+	public virtual void FixedUpdate ()
 	{
-		control.SimpleMove(move * movementSpeed);
+		_transform.position += new Vector3(move.x * movementSpeed, move.y * movementSpeed, 0);
+	}
+
+	public Vector2 AimDirection()
+	{
+		var mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+		var playerPosition = new Vector2(Screen.width * 0.5f, Screen.height * 0.5f);
+		var aimDir = (mousePosition - playerPosition).normalized;
+		
+		return aimDir;
 	}
 }

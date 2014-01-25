@@ -14,13 +14,10 @@ public class TargetRetical : MonoBehaviour
 
 	void OnGUI()
 	{
-		RaycastHit rayHit;
-		Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out rayHit);
-		
-		var mouseXPos = rayHit.point.x;
-		var mouseYPos = rayHit.point.z;
-		GUI.TextArea(new Rect(100,100,500,100), string.Format("Mouse X: {0}, Mouse Z: {1}",Mathf.Abs(player.transform.position.x - mouseXPos),
-		                                                      Mathf.Abs(player.transform.position.y - mouseYPos)));
+		var aimDir = player.AimDirection();
+
+		GUI.TextArea(new Rect(50,50,100,100), string.Format("Aim X: {0}\n Aim Y: {1}", aimDir.x, aimDir.y));
+		//GUI.TextArea(new Rect(100,200,500,100), string.Format("Mouse X: {0}, Mouse Y: {1}", Input.mousePosition.x, Input.mousePosition.y));
 	}
 	// Update is called once per frame
 	void Update ()
@@ -29,30 +26,14 @@ public class TargetRetical : MonoBehaviour
 		Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out rayHit);
 		
 		var mouseXPos = rayHit.point.x;
-		var mouseYPos = rayHit.point.z;
+		var mouseYPos = rayHit.point.y;
 
 		Vector3 reticalPosition = new Vector3(){
 			x = mouseXPos,
-			y = 0,
-			z = mouseYPos
+			y = mouseYPos,
+			z = 0
 		};
 
 		m_transform.position = reticalPosition;
-	}
-
-	// Gets the normalised 'aiming' vector
-	public Vector3 AimDirection
-	{
-		get
-		{
-			// We need to specify a z position to correctly use the ScreenToWorldPoint function,
-			// so work our how far away the camera is to 0 on the z plane..
-			var mousePos = Input.mousePosition;
-			mousePos.z = -Camera.main.transform.position.z;
-			mousePos.x = -Camera.main.transform.position.x;
-
-			var mousePointInWorld = Camera.main.ScreenToWorldPoint(mousePos);
-			return (mousePointInWorld - player.transform.position).normalized;
-		}
 	}
 }
