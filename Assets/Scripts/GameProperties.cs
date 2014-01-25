@@ -12,18 +12,16 @@ using UnityEngine;
 
 public class GameProperties
 {
-    private static GameProperties instance = new GameProperties ();
-    public static GameProperties Inst
-    {
-        get
-        {
-            return instance;
-        }
-    }
+		private static GameProperties instance = new GameProperties ();
+		public static GameProperties Inst {
+				get {
+						return instance;
+				}
+		}
 
-    public bool Chaser = false;
-    public bool Chasee = false;
+		public bool Chaser = false;
+		public bool Chasee = false;
 
-    public GameObject Player;
+		public GameObject Player;
 }
 

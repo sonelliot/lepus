@@ -504,7 +504,7 @@ MonoBehaviour:
   ClearSpatter: 0
   SpatterDensity: .00999999978
   Spatter:
-  - {fileID: 400000, guid: 8dc918473373aee4197310a0e5f49ee7, type: 2}
+  - {fileID: 400008, guid: 14e8f715e80eb3e468337bf383605d55, type: 2}
 --- !u!1 &1762669661
 GameObject:
   m_ObjectHideFlags: 0
