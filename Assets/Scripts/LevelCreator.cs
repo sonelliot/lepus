@@ -18,7 +18,8 @@ public class LevelCreator : MonoBehaviour
 
     void Generate()
     {
-        if(Spatter.Length != 0)
+        if(Network.isServer &&
+            Spatter.Length != 0)
         {
             Vector3 pos = transform.localPosition;
             float halfWidth = transform.localScale.x / 2f;
@@ -30,7 +31,7 @@ public class LevelCreator : MonoBehaviour
                 {
                     if(Random.value < SpatterDensity)
                     {
-                        Transform p = (Transform)Instantiate(Spatter[Random.Range(0, Spatter.Length)], new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), 0f), transform.localRotation);
+                        Transform p = (Transform)Network.Instantiate(Spatter[Random.Range(0, Spatter.Length)], new Vector3(x + Random.Range(0f, step / 2f), y + Random.Range(0f, step / 2f), 0f), transform.localRotation, 0);
                         p.parent = transform;
                     }
                 }
