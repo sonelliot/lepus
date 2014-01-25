@@ -237,6 +237,7 @@ GameObject:
   - 4: {fileID: 887120847}
   - 114: {fileID: 887120846}
   - 114: {fileID: 887120848}
+  - 148: {fileID: 887120849}
   m_Layer: 0
   m_Name: MainSceneSetup
   m_TagString: Untagged
@@ -280,8 +281,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bca2fa4492805bf41a7341eca0231d96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AreaWidth: 200
-  AreaHeight: 100
+--- !u!148 &887120849
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 887120845}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1
 --- !u!1 &1016129467
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,4 +530,4 @@ MonoBehaviour:
   ClearSpatter: 0
   SpatterDensity: .00999999978
   Spatter:
-  - {fileID: 400000, guid: 309fbe0f7bd2d674b846d789a7af6cc9, type: 2}
+  - {fileID: 400008, guid: f30ebc99ab5027f419ebfe0731155f24, type: 2}
