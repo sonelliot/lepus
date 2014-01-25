@@ -1,0 +1,51 @@
+using UnityEngine;
+using System.Collections;
+
+public class UnitPlayer : Unit
+{
+	public GameObject projectilePrefab;
+
+    // Use this for initialization
+    public override void Start ()
+    {
+        base.Start ();
+    }
+
+<<<<<<< HEAD
+    // Update is called once per frame
+    public override void Update ()
+    {
+        // Only update if this object belongs to our instance. Every client updates their own object.
+        if (GetComponent<NetworkView> ().isMine)
+        {
+            //Movement shiat
+            move = new Vector3 (Input.GetAxis ("Horizontal"), 0f, Input.GetAxis ("Vertical"));
+            move.Normalize ();
+            
+            base.Update ();
+        }
+    }
+=======
+	void OnGUI()
+	{
+		//move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+		//GUI.TextArea(new Rect(100,100,100,100), string.Format("Move X: {0}\n Move Y: {1}", move.x, move.y));
+	}
+
+	// Update is called once per frame
+	public override void FixedUpdate ()
+	{
+		//Movement shiat
+		move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+		move.Normalize();
+
+		if(Input.GetKeyDown("space"))
+	   	{
+			Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+		}
+
+		base.FixedUpdate();
+	}
+
+>>>>>>> 9d79cb7ec5a6c9277ea4478d360ba4dfc750a3cb
+}
