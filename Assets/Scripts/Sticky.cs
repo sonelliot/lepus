@@ -18,13 +18,16 @@ public class Sticky : MonoBehaviour
 
 		void OnCollisionEnter2D (Collision2D collision)
 		{
-				bool canStick = collision.gameObject.GetComponent<AllowStickables> () != null;
+				// Does the topmost game object have the "Allow stickables" script attached?
+				var topMostGameObject = collision.gameObject.transform.root.gameObject;
+				bool canStick = topMostGameObject.GetComponent<AllowStickables> () != null;
 
 				if (canStick) {
-						// If we can stick to the object
-						gameObject.GetComponent<Rigidbody2D> ().isKinematic = true;
-						gameObject.GetComponent<BoxCollider2D> ().enabled = false;
-						gameObject.transform.parent = collision.gameObject.transform;
+						//gameObject.GetComponent<SetParentObject>().SetParent(
+						GetComponent<SetParentObject> ().SetParent (topMostGameObject);
+						gameObject.rigidbody2D.isKinematic = true;
+						gameObject.collider2D.enabled = false;
+						//gameObject.transform.parent = topMostGameObject.transform;
 				}		
 		}
 }
