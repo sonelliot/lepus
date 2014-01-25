@@ -2,7 +2,7 @@
 using System.Collections;
 
 [ExecuteInEditMode]
-public class LevelCreator : MonoBehaviour
+public class SpatterGenerator : MonoBehaviour
 {
 #if UNITY_EDITOR
     public bool Regenerate = false;

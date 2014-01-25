@@ -37,9 +37,13 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: Litter
+  - name: Leaves
     userID: 1
     uniqueID: 2349949581
+    locked: 0
+  - name: Grass
+    userID: 2
+    uniqueID: 3075991143
     locked: 0
   - name: Default
     userID: 0
