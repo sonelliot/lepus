@@ -5,145 +5,200 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: net_walking
+  m_Name: net_slash
   serializedVersion: 4
   m_AnimationType: 2
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
   m_CompressedRotationCurves: []
-  m_PositionCurves:
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: .262254, y: -.593710303, z: 0}
-        inSlope: {x: .165810585, y: 2.43189192, z: 0}
-        outSlope: {x: .165810585, y: 2.43189192, z: 0}
-        tangentMode: 535073760
-      - time: .0833333358
-        value: {x: .276071548, y: -.391052634, z: 0}
-        inSlope: {x: -.000412374735, y: .741494358, z: 0}
-        outSlope: {x: -.000412374735, y: .741494358, z: 0}
-        tangentMode: 0
-      - time: .300000012
-        value: {x: .239967227, y: -.596648335, z: 0}
-        inSlope: {x: -.091732651, y: -.586888015, z: 0}
-        outSlope: {x: -.091732651, y: -.586888015, z: 0}
-        tangentMode: 535149404
-      - time: .333333343
-        value: {x: .239406228, y: -.604144096, z: 0}
-        inSlope: {x: -.05212963, y: -.348896414, z: 0}
-        outSlope: {x: -.05212963, y: -.348896414, z: 0}
-        tangentMode: 95
-      - time: .366666675
-        value: {x: .236491919, y: -.619908094, z: 0}
-        inSlope: {x: .0157363191, y: -.176003546, z: 0}
-        outSlope: {x: .0157363191, y: -.176003546, z: 0}
-        tangentMode: 0
-      - time: .583333313
-        value: {x: .262254, y: -.593710303, z: 0}
-        inSlope: {x: .118901931, y: .120912895, z: 0}
-        outSlope: {x: .118901931, y: .120912895, z: 0}
-        tangentMode: 84
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    path: NETguy2_17
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: .708114147, y: -.595866919, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-      - time: .0833333358
-        value: {x: .708114147, y: -.595866919, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 1
-      - time: .300000012
-        value: {x: .708114147, y: -.595866919, z: 0}
-        inSlope: {x: .138174906, y: -.276348025, z: 0}
-        outSlope: {x: .138174906, y: -.276348025, z: 0}
-        tangentMode: 0
-      - time: .333333343
-        value: {x: .717325807, y: -.614290118, z: 0}
-        inSlope: {x: .247651964, y: -.149858609, z: 0}
-        outSlope: {x: .247651964, y: -.149858609, z: 0}
-        tangentMode: 53
-      - time: .366666675
-        value: {x: .724624276, y: -.605857491, z: 0}
-        inSlope: {x: .0650198758, y: .83079952, z: 0}
-        outSlope: {x: .0650198758, y: .83079952, z: 0}
-        tangentMode: 0
-      - time: .5
-        value: {x: .712769032, y: -.418041468, z: 0}
-        inSlope: {x: -.0723864883, y: -.362642825, z: 0}
-        outSlope: {x: -.0723864883, y: -.362642825, z: 0}
-        tangentMode: 0
-      - time: .583333313
-        value: {x: .708114147, y: -.595866919, z: 0}
-        inSlope: {x: -.055858627, y: -2.13390589, z: 0}
-        outSlope: {x: -.055858627, y: -2.13390589, z: 0}
-        tangentMode: 2
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    path: NETguy2_15
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: .640334606, y: -.451031357, z: 0}
-        inSlope: {x: .0276346207, y: -.0552701354, z: 0}
-        outSlope: {x: .0276346207, y: -.0552701354, z: 0}
-        tangentMode: 0
-      - time: .333333343
-        value: {x: .649546146, y: -.469454736, z: 0}
-        inSlope: {x: .0765917376, y: .192259148, z: 0}
-        outSlope: {x: .0765917376, y: .192259148, z: 0}
-        tangentMode: 535149404
-      - time: .366666675
-        value: {x: .653731108, y: -.454795122, z: 0}
-        inSlope: {x: .0215175785, y: .917807758, z: 0}
-        outSlope: {x: .0215175785, y: .917807758, z: 0}
-        tangentMode: 95
-      - time: .5
-        value: {x: .642729282, y: -.268684864, z: 0}
-        inSlope: {x: -.0556249097, y: -.396165729, z: 0}
-        outSlope: {x: -.0556249097, y: -.396165729, z: 0}
-        tangentMode: 2053729385
-      - time: .583333313
-        value: {x: .640334606, y: -.451031357, z: 0}
-        inSlope: {x: -.028736122, y: -2.18815851, z: 0}
-        outSlope: {x: -.028736122, y: -2.18815851, z: 0}
-        tangentMode: 534911348
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    path: NETguy2_14
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: {x: .394258142, y: -.424663723, z: 0}
-        inSlope: {x: -.508202076, y: 1.35344195, z: 0}
-        outSlope: {x: -.508202076, y: 1.35344195, z: 0}
-        tangentMode: 534642724
-      - time: .0833333358
-        value: {x: .351907969, y: -.311876893, z: 0}
-        inSlope: {x: -.264730006, y: .43225652, z: 0}
-        outSlope: {x: -.264730006, y: .43225652, z: 0}
-        tangentMode: 535395100
-      - time: .300000012
-        value: {x: .347302079, y: -.417811483, z: 0}
-        inSlope: {x: -.02125795, y: -.488928884, z: 0}
-        outSlope: {x: -.02125795, y: -.488928884, z: 0}
-        tangentMode: -2183880
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    path: NETguy2_20
+  m_PositionCurves: []
   m_ScaleCurves: []
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .200000003
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: net_arm/netDown
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: net_arm/NETguy2_1
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: net_arm/NETguy2_2
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: net_arm/NETguy2_11
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: net_arm/NETguy2_12
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .200000003
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_Enabled
+    path: net_arm/netMed
+    classID: 212
+    script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -153,7 +208,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .583333313
+    m_StopTime: .466666669
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -172,424 +227,185 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .262254
-        inSlope: .165810585
-        outSlope: .165810585
-        tangentMode: 10
-      - time: .0833333358
-        value: .276071548
-        inSlope: -.000412374735
-        outSlope: -.000412374735
-        tangentMode: 10
-      - time: .300000012
-        value: .239967227
-        inSlope: -.091732651
-        outSlope: -.091732651
-        tangentMode: 10
-      - time: .333333343
-        value: .239406228
-        inSlope: -.05212963
-        outSlope: -.05212963
-        tangentMode: 10
-      - time: .366666675
-        value: .236491919
-        inSlope: .0157363191
-        outSlope: .0157363191
-        tangentMode: 10
-      - time: .583333313
-        value: .262254
-        inSlope: .118901931
-        outSlope: .118901931
-        tangentMode: 10
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .200000003
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_LocalPosition.x
-    path: NETguy2_17
-    classID: 4
+    attribute: m_Enabled
+    path: net_arm/netDown
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -.593710303
-        inSlope: 2.43189192
-        outSlope: 2.43189192
-        tangentMode: 10
-      - time: .0833333358
-        value: -.391052634
-        inSlope: .741494358
-        outSlope: .741494358
-        tangentMode: 10
-      - time: .300000012
-        value: -.596648335
-        inSlope: -.586888015
-        outSlope: -.586888015
-        tangentMode: 10
-      - time: .333333343
-        value: -.604144096
-        inSlope: -.348896414
-        outSlope: -.348896414
-        tangentMode: 10
-      - time: .366666675
-        value: -.619908094
-        inSlope: -.176003546
-        outSlope: -.176003546
-        tangentMode: 10
-      - time: .583333313
-        value: -.593710303
-        inSlope: .120912895
-        outSlope: .120912895
-        tangentMode: 10
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_LocalPosition.y
-    path: NETguy2_17
-    classID: 4
+    attribute: m_Enabled
+    path: net_arm/NETguy2_1
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0833333358
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .300000012
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .333333343
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .366666675
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .583333313
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_LocalPosition.z
-    path: NETguy2_17
-    classID: 4
+    attribute: m_Enabled
+    path: net_arm/NETguy2_2
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: .708114147
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0833333358
-        value: .708114147
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .300000012
-        value: .708114147
-        inSlope: .138174906
-        outSlope: .138174906
-        tangentMode: 10
-      - time: .333333343
-        value: .717325807
-        inSlope: .247651964
-        outSlope: .247651964
-        tangentMode: 10
-      - time: .366666675
-        value: .724624276
-        inSlope: .0650198758
-        outSlope: .0650198758
-        tangentMode: 10
-      - time: .5
-        value: .712769032
-        inSlope: -.0723864883
-        outSlope: -.0723864883
-        tangentMode: 10
-      - time: .583333313
-        value: .708114147
-        inSlope: -.055858627
-        outSlope: -.055858627
-        tangentMode: 10
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_LocalPosition.x
-    path: NETguy2_15
-    classID: 4
+    attribute: m_Enabled
+    path: net_arm/NETguy2_11
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -.595866919
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0833333358
-        value: -.595866919
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .300000012
-        value: -.595866919
-        inSlope: -.276348025
-        outSlope: -.276348025
-        tangentMode: 10
-      - time: .333333343
-        value: -.614290118
-        inSlope: -.149858609
-        outSlope: -.149858609
-        tangentMode: 10
-      - time: .366666675
-        value: -.605857491
-        inSlope: .83079952
-        outSlope: .83079952
-        tangentMode: 10
-      - time: .5
-        value: -.418041468
-        inSlope: -.362642825
-        outSlope: -.362642825
-        tangentMode: 10
-      - time: .583333313
-        value: -.595866919
-        inSlope: -2.13390589
-        outSlope: -2.13390589
-        tangentMode: 10
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_LocalPosition.y
-    path: NETguy2_15
-    classID: 4
+    attribute: m_Enabled
+    path: net_arm/NETguy2_12
+    classID: 212
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0833333358
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .150000006
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .200000003
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .300000012
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .383333325
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: .466666669
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .333333343
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .366666675
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .583333313
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
       m_PreInfinity: 2
       m_PostInfinity: 2
-    attribute: m_LocalPosition.z
-    path: NETguy2_15
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .640334606
-        inSlope: .0276346207
-        outSlope: .0276346207
-        tangentMode: 10
-      - time: .333333343
-        value: .649546146
-        inSlope: .0765917376
-        outSlope: .0765917376
-        tangentMode: 10
-      - time: .366666675
-        value: .653731108
-        inSlope: .0215175785
-        outSlope: .0215175785
-        tangentMode: 10
-      - time: .5
-        value: .642729282
-        inSlope: -.0556249097
-        outSlope: -.0556249097
-        tangentMode: 10
-      - time: .583333313
-        value: .640334606
-        inSlope: -.028736122
-        outSlope: -.028736122
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.x
-    path: NETguy2_14
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: -.451031357
-        inSlope: -.0552701354
-        outSlope: -.0552701354
-        tangentMode: 10
-      - time: .333333343
-        value: -.469454736
-        inSlope: .192259148
-        outSlope: .192259148
-        tangentMode: 10
-      - time: .366666675
-        value: -.454795122
-        inSlope: .917807758
-        outSlope: .917807758
-        tangentMode: 10
-      - time: .5
-        value: -.268684864
-        inSlope: -.396165729
-        outSlope: -.396165729
-        tangentMode: 10
-      - time: .583333313
-        value: -.451031357
-        inSlope: -2.18815851
-        outSlope: -2.18815851
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.y
-    path: NETguy2_14
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .333333343
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .366666675
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .5
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .583333313
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.z
-    path: NETguy2_14
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: .394258142
-        inSlope: -.508202076
-        outSlope: -.508202076
-        tangentMode: 10
-      - time: .0833333358
-        value: .351907969
-        inSlope: -.264730006
-        outSlope: -.264730006
-        tangentMode: 10
-      - time: .300000012
-        value: .347302079
-        inSlope: -.02125795
-        outSlope: -.02125795
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.x
-    path: NETguy2_20
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: -.424663723
-        inSlope: 1.35344195
-        outSlope: 1.35344195
-        tangentMode: 10
-      - time: .0833333358
-        value: -.311876893
-        inSlope: .43225652
-        outSlope: .43225652
-        tangentMode: 10
-      - time: .300000012
-        value: -.417811483
-        inSlope: -.488928884
-        outSlope: -.488928884
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.y
-    path: NETguy2_20
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .0833333358
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      - time: .300000012
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 10
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    attribute: m_LocalPosition.z
-    path: NETguy2_20
-    classID: 4
+    attribute: m_Enabled
+    path: net_arm/netMed
+    classID: 212
     script: {fileID: 0}
   m_EulerEditorCurves: []
   m_Events: []

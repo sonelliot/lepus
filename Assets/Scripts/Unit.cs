@@ -12,7 +12,7 @@ public class Unit : MonoBehaviour
     public virtual void Start()
     {
         _transform = GetComponent<Transform>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -20,10 +20,11 @@ public class Unit : MonoBehaviour
     {
         if(GetComponent<NetworkView>().isMine)
         {
-            _transform.position += new Vector3(move.x * movementSpeed * Time.deltaTime, move.y * movementSpeed * Time.deltaTime, 0);
+            Vector3 dPos = new Vector3(move.x * movementSpeed * Time.deltaTime, move.y * movementSpeed * Time.deltaTime, 0);
+            _transform.position += dPos;
             if(anim)
             {
-                anim.SetFloat("Velocity", _transform.rigidbody2D.velocity.magnitude);
+                anim.SetFloat("Velocity", dPos.magnitude);
             }
         }
     }
