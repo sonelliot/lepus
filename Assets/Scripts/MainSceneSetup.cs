@@ -26,9 +26,5 @@ public class MainSceneSetup : MonoBehaviour
             GameProperties.Inst.Chasee = true;
             GameProperties.Inst.Player = (GameObject)Network.Instantiate(PlayerChasee, Vector3.up * 2, Quaternion.identity, 0);
         }
-				
-			
-
-        GameProperties.Inst.Player = (GameObject)Network.Instantiate(PlayerPrefab, Vector3.up * 2, Quaternion.identity, 0);
     }
 }
