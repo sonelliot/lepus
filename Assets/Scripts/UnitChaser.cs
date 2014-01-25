@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class UnitChaser : Unit
+
 {
     // Use this for initialization
     public override void Start()
@@ -9,11 +10,13 @@ public class UnitChaser : Unit
         base.Start();
     }
 
+
     void OnGUI()
     {
         //move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         //GUI.TextArea(new Rect(100,100,100,100), string.Format("Move X: {0}\n Move Y: {1}", move.x, move.y));
     }
+
 
     // Update is called once per frame
     public override void Update()
