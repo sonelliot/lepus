@@ -5,11 +5,11 @@ public class UnitPlayer : Unit
 {
 	public GameObject projectilePrefab;
 
-	// Use this for initialization
-	public override void Start ()
-	{
-		base.Start();
-	}
+    // Use this for initialization
+    public override void Start ()
+    {
+        base.Start ();
+    }
 
 	void OnGUI()
 	{
