@@ -14,8 +14,7 @@ public class KnifeyScript : MonoBehaviour
             mouse_pos.y = mouse_pos.y - object_pos.y;
             
             //rigidbody2D.transform.rotation = transform.rotation;
-            rigidbody2D.AddForce (new Vector2 (mouse_pos.x * 500f,
-                                               mouse_pos.y * 500f));
+			rigidbody2D.AddForce (new Vector2 (mouse_pos.x, mouse_pos.y ).normalized * 1000f);
         }
     }
 

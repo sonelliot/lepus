@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UnitPlayer : Unit
 {
-    public GameObject projectilePrefab;
+	public Transform[] Weapons;
 
     // Use this for initialization
     public override void Start ()
@@ -34,7 +34,7 @@ public class UnitPlayer : Unit
                 mouse_pos.y = mouse_pos.y - object_pos.y;
                 var angle = Mathf.Atan2 (mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
 
-                Network.Instantiate (projectilePrefab, transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 180)), 0);
+				Network.Instantiate (Weapons[Random.Range(0, Weapons.Length)], transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 90)), 0);
             }
 
             base.Update ();
