@@ -24,10 +24,9 @@ public class Sticky : MonoBehaviour
 
 				if (canStick) {
 						//gameObject.GetComponent<SetParentObject>().SetParent(
-						GetComponent<SetParentObject> ().SetParent (topMostGameObject);
 						gameObject.rigidbody2D.isKinematic = true;
 						gameObject.collider2D.enabled = false;
-						//gameObject.transform.parent = topMostGameObject.transform;
+						gameObject.transform.parent = topMostGameObject.transform;
 				}		
 		}
 }

@@ -11,7 +11,18 @@ public class UnitChasee : Unit
 		{
 				base.Start ();
 		}
-	
+
+		[RPC]
+		void FireWeapon (Vector3 position, float angle, int weaponType, Vector3 forceDirection)
+		{
+				var obj = Instantiate (Weapons [weaponType], position, Quaternion.Euler (new Vector3 (0, 0, angle + 90)));
+
+				if (obj != null) {
+						var knifyScript = ((Transform)obj).gameObject.GetComponent<KnifeyScript> ();
+						((KnifeyScript)knifyScript).ForceDirection = new Vector2 (forceDirection.x, forceDirection.y);
+				}
+		}
+
 		// Update is called once per frame
 		public override void Update ()
 		{
@@ -26,8 +37,10 @@ public class UnitChasee : Unit
 								mouse_pos.x = mouse_pos.x - object_pos.x;
 								mouse_pos.y = mouse_pos.y - object_pos.y;
 								var angle = Mathf.Atan2 (mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
-				
-								Network.Instantiate (Weapons [Random.Range (0, Weapons.Length)], transform.position, Quaternion.Euler (new Vector3 (0, 0, angle + 90)), 0);
+								var forceDirection = new Vector3 (mouse_pos.x,
+				                                  mouse_pos.y, 0);
+
+								networkView.RPC ("FireWeapon", RPCMode.AllBuffered, transform.position, angle, Random.Range (0, Weapons.Length), forceDirection);
 						}
 			
 						base.Update ();
