@@ -1,0 +1,121 @@
+fileFormatVersion: 2
+guid: 3b763f478d867ac4d99154df54b78fb7
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: fatty_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 121
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: fatty_1
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 61
+        width: 121
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: fatty_2
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 84
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: fatty_4
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 65
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: fatty_6
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 38
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: fatty_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 61
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: fatty_9
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: fatty_10
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 0
+        width: 39
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
