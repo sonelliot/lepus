@@ -15,6 +15,7 @@ public class ConditionalObject : MonoBehaviour
     {
         Good = transform.FindChild("Good").gameObject;
         Bad = transform.FindChild("Bad").gameObject;
+        IsGood = GameProperties.Inst.Chaser;
         ActivateConditionalObject();
     }
 
