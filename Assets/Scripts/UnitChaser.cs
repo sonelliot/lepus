@@ -62,13 +62,13 @@ public class UnitChaser : Unit
             move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
             move.Normalize();
 
-            if(Strike != 0)
+            if(Strike >= 0)
             {
                 --Strike;
             }
             else
             {
-                Strike = Input.GetMouseButtonDown(0) ? 6 : 0;
+                Strike = Input.GetMouseButtonDown(0) ? 6 : -1;
             }
 
             if(anim && Strike >= 0)
