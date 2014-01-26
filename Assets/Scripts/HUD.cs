@@ -5,7 +5,7 @@ public class HUD : MonoBehaviour
 {
 		public GameObject gameController;
 
-		public GUITexture GetReady_Happy;
+		public GameObject GetReady_Happy;
 
 		public GameObject Chaser_Won;
 		public GameObject Chasee_Won;
@@ -35,9 +35,9 @@ public class HUD : MonoBehaviour
 
 				
 				if (controller.state == GameController.GameState.COUNT_DOWN) {
-						GetReady_Happy.enabled = true;
+						GetReady_Happy.SetActive (true);
 				} else {
-						GetReady_Happy.enabled = false;
+						GetReady_Happy.SetActive (false);
 				}
 				
 				if (controller.state == GameController.GameState.PLAYING) {
@@ -57,7 +57,6 @@ public class HUD : MonoBehaviour
 						Chaser_Won.SetActive (true);
 				} else {
 						Chaser_Won.SetActive (false);
-			
 				}
 		}
 

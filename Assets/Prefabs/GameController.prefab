@@ -39,7 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669dcd4f1eee55e4da367a57d168bf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countDownTimer: 0
   timeRemaining: 30
+  gameEndTimer: 0
   state: 0
 --- !u!148 &14800000
 NetworkView:
@@ -48,7 +50,7 @@ NetworkView:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
-  m_StateSynchronization: 2
+  m_StateSynchronization: 1
   m_Observed: {fileID: 11400000}
   m_ViewID:
     m_ID: 0

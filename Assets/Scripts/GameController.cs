@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Linq;
+using System;
 
 public class GameController : MonoBehaviour
 {		
@@ -85,7 +86,9 @@ public class GameController : MonoBehaviour
 
 		public void GameBegin ()
 		{
-
+				if (Network.isClient) {
+						//throw new Exception ("OH SHIT game being called from client");
+				}
 				// TODO: Place players randomly
 
 				state = GameState.COUNT_DOWN;
@@ -104,6 +107,9 @@ public class GameController : MonoBehaviour
 
 		public void GameEnd ()
 		{
+				if (Network.isClient) {
+						throw new Exception ("OH SHIT game end called from client");
+				}
 				gameEndTimer = ENDGAME_TIMER_LENGTH;
 				state = GameState.CHASEE_WON;
 				networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
