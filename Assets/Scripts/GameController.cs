@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
 								timeRemaining -= Time.deltaTime;
 
 								if (timeRemaining < 0) {
-										GameEnd ();
+										ChaseeWin ();
 								}
 						} else if (state == GameState.CHASEE_WON || state == GameState.CHASER_WON) {
 								gameEndTimer -= Time.deltaTime;
@@ -102,14 +102,21 @@ public class GameController : MonoBehaviour
 				}
 		}
 
-		public void GameEnd ()
+		public void ChaseeWin ()
 		{
 				gameEndTimer = ENDGAME_TIMER_LENGTH;
 				state = GameState.CHASEE_WON;
 				networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
 		}
 
-	
+	public void ChaserWin()
+	{
+		gameEndTimer = ENDGAME_TIMER_LENGTH;
+		state = GameState.CHASER_WON;
+		networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
+	}
+
+
 		[RPC]
 		public void OnGameHasEnded ()
 		{
