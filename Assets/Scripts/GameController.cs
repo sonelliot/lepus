@@ -107,6 +107,8 @@ public class GameController : MonoBehaviour
 				foreach (var projectile in FindObjectsOfType<GameObject>().Where(obj => obj.layer == LayerMask.NameToLayer("Bullets"))) {
 						GameObject.Destroy (projectile);
 				}
+
+				RandomisePosition ();
 		}
 
 		public void GameEnd ()
@@ -124,6 +126,18 @@ public class GameController : MonoBehaviour
 		public void OnGameHasEnded ()
 		{
 
+		}
+
+		public void RandomisePosition ()
+		{
+				Transform playerTranny;
+				if (GameProperties.Inst.Chasee) {
+						playerTranny = GameObject.FindObjectOfType<UnitChasee> ().transform;
+				} else {
+						playerTranny = GameObject.FindObjectOfType<UnitChaser> ().transform;
+				}
+
+				playerTranny.position = new Vector3 (UnityEngine.Random.Range (-10.0f, 10.0f), UnityEngine.Random.Range (-10.0f, 10), playerTranny.position.z);
 		}
 
 
