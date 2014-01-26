@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 844c01378428c54499e47dd28dddd706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 17
+  movementSpeed: 8
   gameController: {fileID: 0}
 --- !u!148 &14800000
 NetworkView:
