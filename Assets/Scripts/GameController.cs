@@ -95,6 +95,9 @@ public class GameController : MonoBehaviour
 				}
 				// TODO: Place players randomly
 
+		if (state == GameState.CHASEE_WON) chasee_score++;
+		if (state == GameState.CHASER_WON) chaser_score++;
+
 				state = GameState.COUNT_DOWN;
 				timeRemaining = ROUND_LENGTH;
 				countDownTimer = COUNTDOWN_TIMER_LENGTH;
