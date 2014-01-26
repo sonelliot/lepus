@@ -7,6 +7,9 @@ public class HUD : MonoBehaviour
 
 		public GUITexture GetReady_Happy;
 
+		public GameObject Chaser_Won;
+		public GameObject Chasee_Won;
+
 		public GUIText TimeRemainingText;
 
 		// Use this for initialization
@@ -42,7 +45,20 @@ public class HUD : MonoBehaviour
 				} else {
 						TimeRemainingText.enabled = false;
 				}
-				
+
+				if (controller.state == GameController.GameState.CHASEE_WON) {
+						Chasee_Won.SetActive (true);
+				} else {
+						Chasee_Won.SetActive (false);
+						
+				}
+
+				if (controller.state == GameController.GameState.CHASER_WON) {
+						Chaser_Won.SetActive (true);
+				} else {
+						Chaser_Won.SetActive (false);
+			
+				}
 		}
 
 		public void CountDownGUI ()
