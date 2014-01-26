@@ -87,7 +87,7 @@ public class GameController : MonoBehaviour
 		public void GameBegin ()
 		{
 				if (Network.isClient) {
-						throw new Exception ("OH SHIT game being called from client");
+						//throw new Exception ("OH SHIT game being called from client");
 				}
 				// TODO: Place players randomly
 
