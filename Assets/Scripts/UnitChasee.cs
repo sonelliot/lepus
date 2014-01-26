@@ -3,12 +3,13 @@ using System.Collections;
 
 public class UnitChasee : Unit
 {
-
+		public GameObject gameController;
 		public Transform[] Weapons;
 
 		// Use this for initialization
 		public override void Start ()
 		{
+				gameController = GameObject.Find ("GameController");
 				base.Start ();
 		}
 
@@ -26,7 +27,8 @@ public class UnitChasee : Unit
 		// Update is called once per frame
 		public override void Update ()
 		{
-				if (GetComponent<NetworkView> ().isMine) {
+				if (GetComponent<NetworkView> ().isMine &&
+						gameController.GetComponent<GameController> ().InputEnabled) {
 						//Movement shiat
 						move = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
 						move.Normalize ();
