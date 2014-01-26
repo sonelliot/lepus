@@ -10,6 +10,9 @@ public class HUD : MonoBehaviour
 		public GameObject Chaser_Won;
 		public GameObject Chasee_Won;
 
+		public GameObject Chasee_Score;
+		public GameObject Chaser_Score;
+
 		public GUIText TimeRemainingText;
 
 		// Use this for initialization
@@ -58,6 +61,9 @@ public class HUD : MonoBehaviour
 				} else {
 						Chaser_Won.SetActive (false);
 				}
+
+				Chasee_Score.GetComponent<GUIText> ().text = controller.chasee_score.ToString ();
+				Chaser_Score.GetComponent<GUIText> ().text = controller.chaser_score.ToString ();
 		}
 
 		public void CountDownGUI ()
