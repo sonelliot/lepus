@@ -4,7 +4,10 @@ using System.Collections;
 public class UnitChaser : Unit
 {
 		public GameObject gameController;
+		protected float _stunTime = 3.0f;
 		private bool prevStrike;
+		private bool isNotFucked = true;
+
 		// Use this for initialization
 		public override void Start ()
 		{
@@ -12,6 +15,17 @@ public class UnitChaser : Unit
 				base.Start ();
 		}
 
+		[RPC] 
+		void DisableEnemy ()
+		{
+				isNotFucked = false;
+		}
+	
+		[RPC]
+		void EnableEnemy ()
+		{
+				isNotFucked = true;
+		}
 
 		void OnGUI ()
 		{
@@ -27,12 +41,20 @@ public class UnitChaser : Unit
 				}
 		}
 
-
+		private void UpdateStunnedStuff ()
+		{
+				_stunTime -= Time.deltaTime;
+		
+				if (_stunTime < 0.0f) {
+						isNotFucked = true;
+						_stunTime = 5.0f;
+				}
+		}
 		// Update is called once per frame
 		public override void Update ()
 		{
 				if (GetComponent<NetworkView> ().isMine &&
-						gameController.GetComponent<GameController> ().InputEnabled) {
+						gameController.GetComponent<GameController> ().InputEnabled && isNotFucked) {
 						//Movement shiat
 						move = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
 						move.Normalize ();
@@ -47,6 +69,10 @@ public class UnitChaser : Unit
 						}
 
 						base.Update ();
+				}
+
+				if (!isNotFucked) {
+						UpdateStunnedStuff ();
 				}
 		}
 }
