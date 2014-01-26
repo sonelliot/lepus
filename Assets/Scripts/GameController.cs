@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
 								timeRemaining -= Time.deltaTime;
 
 								if (timeRemaining < 0) {
-										GameEnd ();
+										ChaseeWin ();
 								}
 						} else if (state == GameState.CHASEE_WON || state == GameState.CHASER_WON) {
 								gameEndTimer -= Time.deltaTime;
@@ -95,6 +95,9 @@ public class GameController : MonoBehaviour
 				}
 				// TODO: Place players randomly
 
+		if (state == GameState.CHASEE_WON) chasee_score++;
+		if (state == GameState.CHASER_WON) chaser_score++;
+
 				state = GameState.COUNT_DOWN;
 				timeRemaining = ROUND_LENGTH;
 				countDownTimer = COUNTDOWN_TIMER_LENGTH;
@@ -111,7 +114,7 @@ public class GameController : MonoBehaviour
 				RandomisePosition ();
 		}
 
-		public void GameEnd ()
+		public void ChaseeWin ()
 		{
 				if (Network.isClient) {
 						throw new Exception ("OH SHIT game end called from client");
@@ -121,7 +124,14 @@ public class GameController : MonoBehaviour
 				networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
 		}
 
-	
+	public void ChaserWin()
+	{
+		gameEndTimer = ENDGAME_TIMER_LENGTH;
+		state = GameState.CHASER_WON;
+		networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
+	}
+
+
 		[RPC]
 		public void OnGameHasEnded ()
 		{
