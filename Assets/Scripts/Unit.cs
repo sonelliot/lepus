@@ -6,18 +6,33 @@ public class Unit : MonoBehaviour
 		public float movementSpeed = 3.0f;
 		protected Vector2 move = Vector2.zero;
 		protected Transform _transform;
+		protected Animator anim;
 
 		// Use this for initialization
 		public virtual void Start ()
 		{
 				_transform = GetComponent<Transform> ();
+				anim = GetComponentInChildren<Animator> ();
+		}
+
+		[RPC]
+		void SetVelocity (float velocity)
+		{
+				if (anim) {
+						anim.SetFloat ("Velocity", velocity);
+				}
 		}
 
 		// Update is called once per frame
 		public virtual void Update ()
 		{
 				if (GetComponent<NetworkView> ().isMine) {
-						_transform.position += new Vector3 (move.x * movementSpeed * Time.deltaTime, move.y * movementSpeed * Time.deltaTime, 0);
+						Vector3 dPos = new Vector3 (move.x * movementSpeed * Time.deltaTime, move.y * movementSpeed * Time.deltaTime, 0);
+						_transform.position += dPos;
+						if (anim) {
+								anim.SetFloat ("Velocity", dPos.magnitude);
+								networkView.RPC ("SetVelocity", RPCMode.AllBuffered, dPos.magnitude);
+						}
 				}
 		}
 
