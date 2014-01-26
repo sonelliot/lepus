@@ -31,7 +31,7 @@ public class Unit : MonoBehaviour
 						_transform.position += dPos;
 						if (anim) {
 								anim.SetFloat ("Velocity", dPos.magnitude);
-								networkView.RPC ("SetVelocity", RPCMode.AllBuffered, dPos.magnitude);
+								//networkView.RPC ("SetVelocity", RPCMode.AllBuffered, dPos.magnitude);
 						}
 				}
 		}
