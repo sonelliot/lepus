@@ -26,6 +26,10 @@ public class GameController : MonoBehaviour
 
 		public GameState state = GameState.WAITING_FOR_PLAYER;
 
+		public int chaser_score = 0;
+		public int chasee_score = 0;
+
+
 		public bool InputEnabled {
 				get {
 						return state == GameState.PLAYING || state == GameState.WAITING_FOR_PLAYER;
