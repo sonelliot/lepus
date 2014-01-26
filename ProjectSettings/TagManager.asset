@@ -53,3 +53,11 @@ TagManager:
     userID: 3
     uniqueID: 710099259
     locked: 0
+  - name: Fog
+    userID: 4
+    uniqueID: 2423339867
+    locked: 0
+  - name: Cloud
+    userID: 5
+    uniqueID: 2307884043
+    locked: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 54f3df11c49a9b54184647cab648bb8a
+guid: 00b68db581d7bab45b9de4e309823686
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -24,13 +24,13 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -44,6 +44,33 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Clouds_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 82
+        width: 260
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Clouds_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 59
+        width: 376
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Clouds_2
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 34
+        width: 479
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 

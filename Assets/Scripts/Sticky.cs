@@ -21,7 +21,10 @@ public class Sticky : MonoBehaviour
 				// Does the topmost game object have the "Allow stickables" script attached?
 				var topMostGameObject = collision.gameObject.transform.root.gameObject;
 				bool canStick = topMostGameObject.GetComponent<AllowStickables> () != null;
-		
+
+				// We hit something, make friction affect us now so that we dont have sliding fuckign knives everywhere
+				gameObject.GetComponent<Rigidbody2D> ().drag = 10;
+				gameObject.GetComponent<Rigidbody2D> ().angularDrag = 10;
 				if (canStick) {
 						//gameObject.GetComponent<SetParentObject>().SetParent(
 						gameObject.rigidbody2D.isKinematic = true;
