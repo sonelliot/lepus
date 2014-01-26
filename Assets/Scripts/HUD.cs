@@ -29,11 +29,11 @@ public class HUD : MonoBehaviour
 
 		public void OnGUI ()
 		{
-				GUI.Box (new Rect (10, 10, 300, 100), "");
+				//GUI.Box (new Rect (10, 10, 300, 100), "");
 				var controller = gameController.GetComponent<GameController> ();
 
-				GUI.Label (new Rect (20, 20, 300, 30), "Game Time: " + controller.timeRemaining);
-				GUI.Label (new Rect (20, 50, 300, 30), "Game Stsate: " + controller.state.ToString ());
+				//GUI.Label (new Rect (20, 20, 300, 30), "Game Time: " + controller.timeRemaining);
+				//GUI.Label (new Rect (20, 50, 300, 30), "Game Stsate: " + controller.state.ToString ());
 
 
 				
