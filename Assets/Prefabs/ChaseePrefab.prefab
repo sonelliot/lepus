@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47aaa587743e03a46859e072369df95b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 15
+  movementSpeed: 8
   gameController: {fileID: 0}
   Weapons:
   - {fileID: 400014, guid: d7988f4ab022f2c45afe590ba0ace1a0, type: 2}
