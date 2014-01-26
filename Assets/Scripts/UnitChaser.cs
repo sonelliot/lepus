@@ -5,7 +5,7 @@ public class UnitChaser : Unit
 {
 		public GameObject gameController;
 		protected float _stunTime = 3.0f;
-		private bool prevStrike;
+		private int Strike = 0;
 		private bool isNotFucked = true;
 
 		// Use this for initialization
@@ -59,13 +59,16 @@ public class UnitChaser : Unit
 						move = new Vector2 (Input.GetAxis ("Horizontal"), Input.GetAxis ("Vertical"));
 						move.Normalize ();
 
-						bool strike = Input.GetMouseButtonDown (0);
+						if (Strike >= 0) {
+								--Strike;
+						} else {
+								Strike = Input.GetMouseButtonDown (0) ? 6 : -1;
+						}
 
-						if (anim && (prevStrike != strike)) {
+						if (anim && Strike >= 0) {
 								//Swing Weapon Here
-								anim.SetBool ("Strike", strike);
-								networkView.RPC ("SetStrike", RPCMode.AllBuffered, strike ? 2 : 0);
-								prevStrike = strike;
+								anim.SetBool ("Strike", Strike != 0);
+								networkView.RPC ("SetStrike", RPCMode.AllBuffered, Strike);
 						}
 
 						base.Update ();
