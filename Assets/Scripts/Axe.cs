@@ -1,29 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Axe : MonoBehaviour {
+public class Axe : MonoBehaviour
+{
 
-	GameController controller;
+		GameController controller;
 
-	UnitChasee chasee;
+		UnitChasee chasee;
 
-	// Use this for initialization
-	void Start () {
-		controller = (GameController)GameObject.Find ("GameController").GetComponent<GameController>();
-	}
-
-	void Update()
-	{
-		if (chasee == null)
+		// Use this for initialization
+		void Start ()
 		{
-			chasee = GameObject.FindObjectOfType<UnitChasee>();
+				controller = (GameController)GameObject.Find ("GameController").GetComponent<GameController> ();
 		}
 
-		Vector3 toChasee = chasee.transform.position - transform.position;
-
-		if (toChasee.magnitude < 3f && Input.GetMouseButtonDown(0))
+		void Update ()
 		{
-			controller.ChaserWin();
+				if (Network.connections.Length > 0) {
+						if (chasee == null) {
+								chasee = GameObject.FindObjectOfType<UnitChasee> ();
+						}
+			
+						Vector3 toChasee = chasee.transform.position - transform.position;
+			
+						if (toChasee.magnitude < 3f && Input.GetMouseButtonDown (0)) {
+								controller.ChaserWin ();
+						}
+
+				}
 		}
-	}
 }	

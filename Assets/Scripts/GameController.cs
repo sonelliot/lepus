@@ -95,8 +95,10 @@ public class GameController : MonoBehaviour
 				}
 				// TODO: Place players randomly
 
-		if (state == GameState.CHASEE_WON) chasee_score++;
-		if (state == GameState.CHASER_WON) chaser_score++;
+				if (state == GameState.CHASEE_WON)
+						chasee_score++;
+				if (state == GameState.CHASER_WON)
+						chaser_score++;
 
 				state = GameState.COUNT_DOWN;
 				timeRemaining = ROUND_LENGTH;
@@ -124,12 +126,12 @@ public class GameController : MonoBehaviour
 				networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
 		}
 
-	public void ChaserWin()
-	{
-		gameEndTimer = ENDGAME_TIMER_LENGTH;
-		state = GameState.CHASER_WON;
-		networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
-	}
+		public void ChaserWin ()
+		{
+				gameEndTimer = ENDGAME_TIMER_LENGTH;
+				state = GameState.CHASER_WON;
+				networkView.RPC ("OnGameHasEnded", RPCMode.AllBuffered);
+		}
 
 
 		[RPC]
@@ -159,6 +161,8 @@ public class GameController : MonoBehaviour
 				stream.Serialize (ref countDownTimer);
 				stream.Serialize (ref gameEndTimer);
 				stream.Serialize (ref gameState);
+				stream.Serialize (ref chaser_score);
+				stream.Serialize (ref chaser_score);
 
 				state = (GameState)gameState;
 		}
