@@ -13,7 +13,7 @@ public class HUD : MonoBehaviour
 		public GameObject Chasee_Score;
 		public GameObject Chaser_Score;
 
-		public GUIText TimeRemainingText;
+		public GameObject TimeRemainingText;
 
 		// Use this for initialization
 		void Start ()
@@ -44,9 +44,10 @@ public class HUD : MonoBehaviour
 				}
 				
 				if (controller.state == GameController.GameState.PLAYING) {
-						TimeRemainingText.text = string.Format ("{0} SECONDS REMAINING!", (int)gameController.GetComponent<GameController> ().timeRemaining);
+						TimeRemainingText.GetComponent<GUIText> ().text = string.Format ("{0} SECONDS REMAINING!", (int)gameController.GetComponent<GameController> ().timeRemaining);
+						TimeRemainingText.SetActive (true);
 				} else {
-						TimeRemainingText.enabled = false;
+						TimeRemainingText.SetActive (false);
 				}
 
 				if (controller.state == GameController.GameState.CHASEE_WON) {
